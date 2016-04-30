@@ -6,7 +6,7 @@ import org.objectweb.asm.Opcodes;
 public class RenderGlintVisitor extends MethodVisitor {
 
 	public RenderGlintVisitor(MethodVisitor mv) {
-		super(Opcodes.ASM5, mv);
+		super(Opcodes.ASM4, mv);
 	}
 
 	@Override

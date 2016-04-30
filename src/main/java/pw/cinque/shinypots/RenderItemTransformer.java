@@ -1,6 +1,6 @@
 package pw.cinque.shinypots;
 
-import javax.swing.JOptionPane;
+import java.lang.reflect.Field;
 
 import net.minecraft.launchwrapper.IClassTransformer;
 
@@ -17,7 +17,7 @@ public class RenderItemTransformer implements IClassTransformer {
 		if (transformedName.equals("net.minecraft.client.renderer.entity.RenderItem")) {
 			ClassReader reader = new ClassReader(buffer);
 			ClassWriter writer = new ClassWriter(reader, ClassWriter.COMPUTE_FRAMES);
-			ClassVisitor visitor = new ClassVisitor(Opcodes.ASM5, writer) {
+			ClassVisitor visitor = new ClassVisitor(Opcodes.ASM4, writer) {
 				
 				@Override
 				public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
