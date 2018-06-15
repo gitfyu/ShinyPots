@@ -22,7 +22,7 @@ group= "pw.cinque.shinypots" // http://maven.apache.org/guides/mini/guide-naming
 archivesBaseName = "ShinyPots"
 
 minecraft {
-    version = "1.7.10-10.13.4.1558-1.7.10"
+    version = "1.8.9-11.15.1.2318-1.8.9"
     runDir = "eclipse"
 }
 
